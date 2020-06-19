@@ -1,0 +1,16 @@
+<launch>
+	<include file="$(find gazebo_ros)/launch/empty_world.launch">
+		<arg name="world_name" value="$(find lander_detector_gazebo)/worlds/default_world.world"/>
+		<arg name="gui" value="true"/>
+	</include>
+
+
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(find lander_detector_description)/urdf/lander_detector.xacro'"/>
+
+  <node name="lander_detector_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
+   args="-urdf -param robot_description -model lander_detector" />
+
+	 <!-- ros_control mybot launch file -->
+<include file="$(find lander_detector_control)/launch/lander_detector_control.launch" />
+
+</launch>

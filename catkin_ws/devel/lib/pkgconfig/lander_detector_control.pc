@@ -1,0 +1,8 @@
+prefix=/home/teo-ssd/Documents/LanderDetector/catkin_ws/devel
+
+Name: lander_detector_control
+Description: Description of lander_detector_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

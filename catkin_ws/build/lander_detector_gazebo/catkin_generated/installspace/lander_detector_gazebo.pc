@@ -1,0 +1,8 @@
+prefix=/home/teo-ssd/Documents/LanderDetector/catkin_ws/install
+
+Name: lander_detector_gazebo
+Description: Description of lander_detector_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
